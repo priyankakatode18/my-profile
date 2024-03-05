@@ -3,26 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Font Family Assignment</title>
-    		<!-- Google Font Family -->
+    <title>Position Assignment</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
- 
-<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> -->
+header{
+background-color: black;
+color: aliceblue;
+padding: 10px;
+position: fixed;
+width: 100%;
+top: 0;
+/* z-index: 5; */
+}
 
-<!-- External CSS -->
-<link rel="stylesheet" href="style.css">
+nav{
+    background-color: rgb(232, 222, 222);
+   color: black;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    /* z-index: 4; */
+    
+}
+a{
+    color: brown;
+font-weight: bolder;
+}
+#home{
 
- 
+    padding-bottom: 100px;
+    width: auto;
+    top: 60px;
+    display: inline-block;
+    position: relative;
+}
 
+li{
+
+    padding-top: 10px;
+    /* display: inline-block; */
+margin-right: 40px;
+}
+
+/* h2{
+
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 120px;
+    /* z-index: 3; */
+
+/* } */ 
+table, tr, th, td {
+    border: 2px solid rgb(216, 186, 131);
+    border-collapse: collapse;
+  }
+  td,th{
+    padding: 10px;
+    font-family: "Poppins", sans-serif;
+
+  }
+#whatsapp{
+    position: fixed;
+    right:35%;
+    bottom: 50px;
+}
+
+    </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- header section -->
+     <header>
     <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
@@ -39,48 +95,35 @@
         <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
       </svg>&nbsp<span class="header-info">RESUME </span> &nbsp; &nbsp; &nbsp; </a></p>
     </header> 
-          <!-- nevigation Section -->
-    
-        <!-- <a href="#home">HOME</a> &nbsp; &nbsp; &nbsp;
-        <a href="#techStack">TECH STACK</a>&nbsp; &nbsp; &nbsp;
-        <a href="#project">PROJECTS</a>&nbsp; &nbsp; &nbsp;
-        <a href="#education">EDUCATION</a>&nbsp; &nbsp; &nbsp;
-        <a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a>&nbsp; &nbsp; &nbsp;
-        <a href="other.html">OTHERS</a>&nbsp; &nbsp; &nbsp;
-         -->
-         <hr>
-         <nav id="navSection">
-          <ul>
-            <li><a href="#home">HOME</a> </li>
-            <li><a href="#techStack">TECH STACK</a> </li>
-            <li><a href="#project">PROJECTS</a></li>
-            <li><a href="#education">EDUCATION</a></li>
-            <li><a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a></li>
-            <li> <a href="others.html" target="_blank">OTHERS</a></li>
-          </ul>
-        </nav>
-          <hr>
 
-<section id="container">
-            <!-- HOME Section -->
-<section id="home">
+<!-- nav section -->
+    <hr>
+    <nav>
+     
+       <a href="#home">HOME</a> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="#techStack">TECH STACK</a> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="#project">PROJECTS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="#education">EDUCATION</a> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="personalDetail.html" target="_blank">PERSONAL DETAILS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+       <a href="others.html" target="_blank">OTHERS</a> &nbsp;&nbsp;&nbsp;&nbsp;
+    
+   </nav>
+<!-- professional summary -->
+   <section id="home">
     <h2 class="heading">Professional Summary  </h2>
     <ul id="listSummary">
-      <li style="color: cadetblue;">Having 1 years of experience in developing single page applications using Angular8, HTML5, CSS3, Bootstrap</li>
-      <li>Experience on working with version control system-GIT and GitHub.</li>
-      <li>Experience working with JIRA for user stories and bug tracking </li>
-      <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool </li>
-      <li>Working exposure on ID's like VS Code and Notepad++</li>
-      <li>Good working experience under Agile methodologies environment</li>
-      <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code Knowledge of NodeJS</li>
-      <li>Ability to work with people at all levels in the program.</li>
-    </ul>
+        <li style="color: cadetblue;">Having 1 years of experience in developing single page applications using Angular8, HTML5, CSS3, Bootstrap</li>
+        <li>Experience on working with version control system-GIT and GitHub.</li>
+        <li>Experience working with JIRA for user stories and bug tracking </li>
+        <li>Strong Debugging & Troubleshooting code experience using Chrome Developer Tool </li>
+        <li>Working exposure on ID's like VS Code and Notepad++</li>
+        <li>Good working experience under Agile methodologies environment</li>
+        <li>Experience in using Chrome Developer Tool for debugging and Troubleshooting the code Knowledge of NodeJS</li>
+        <li>Ability to work with people at all levels in the program.</li>
+      </ul>
   </section>
-</section>
-<hr>
-
- <!-- Technology Stack Section -->
- <section id="techStack">
+  <hr>
+  <section id="techStack">
     <h2 class="heading">My Technology stack is</h2>
     <table id="techTable" >
 
@@ -199,5 +242,9 @@
     <!-- Copy write section -->
     Copyright &copy;2024 priyanka Video Communications, Inc. All rights reserved.
   </section>
+  <!-- whatsapp icon -->
+  <section id="whatsapp">
+  <img src="assets/images.png" width="70" height="70">
+</section>
 </body>
 </html>
